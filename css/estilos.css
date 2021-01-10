@@ -42,6 +42,31 @@ h2{
     overflow: auto;
 }
 
+
+/*Navegaciob Responsive*/
+.barra{
+    overflow: hidden;
+}
+.mobile-menu{
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    display: block ;
+    padding: 20px 0;
+}
+#nav:target{
+    max-height: 800px;
+}
+.navegacion-principal{
+    max-height: 0;
+    transition: .5s;
+}
+@media (min-width: 768px) {
+    .mobile-menu,
+    .cerrar{
+        display: none;
+    }
+}
 /*Navegacion*/
 .barra{
     margin-top: 40px;
